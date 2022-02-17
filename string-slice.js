@@ -1,7 +1,6 @@
 // split()
 const anthem = 'Amar Shonar Bangla, Ami Tomai Valobashi';
 const words = anthem.split(' ');
-const withOutA = anthem.split('a');
 console.log(words);
 
 //Slice(start, end) 
@@ -22,10 +21,10 @@ const second = 'City';
 //way 1
 const fullString = first + second;
 console.log(fullString);
+
 // another way
 const fullCity = first.concat(second).concat('Dhaka');
 console.log(fullCity);
-
 // const words
 const woords = ['a', 'b', 'c', 'd'];
 const allJoin = woords.join();
