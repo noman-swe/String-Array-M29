@@ -25,3 +25,10 @@ console.log(fullString);
 // another way
 const fullCity = first.concat(second).concat('Dhaka');
 console.log(fullCity);
+
+// const words
+const woords = ['a', 'b', 'c', 'd'];
+const allJoin = woords.join();
+const allJoin2 = woords.join('');
+console.log(allJoin);
+console.log(allJoin2);
