@@ -2,13 +2,13 @@ const products = [
     'Dell harcore i29 200GB laptop',
     'iPone 1TB camera flashlight phone',
     'Yellow laptop with black camera',
-    '1X59 Lenovo Comarcial yega laptop',
+    'Dell 1X59 Lenovo Comarcial yega laptop',
     'LG supernova laptop',
     'HTC low price phone',
-    'Purple Color phone with Laptop'
+    'Dell Purple Color phone with Laptop'
 ];
 
-const searching = 'laptop';
+const searching = 'dell';
 
 // check laptop is here in how many products
 
@@ -24,7 +24,15 @@ for(const product of products){
 // way 02: includes
 for(const product of products){
     if(product.toLowerCase().includes(searching.toLowerCase())){
-        output.push(product.toLowerCase());
+        //output.push(product.toLowerCase());
+    }
+}
+//console.log(output);
+
+// starts with
+for(const product of products){
+    if(product.toLowerCase().startsWith(searching.toLowerCase())){
+        output.push(product.toUpperCase());
     }
 }
 console.log(output);
