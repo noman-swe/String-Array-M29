@@ -25,3 +25,8 @@ if(friends.includes('lion') != -1){
     console.log('I am lion');
 }
 
+// array concat
+const first = [1, 2, 5]
+const second = [11, 12, 25]
+const combined = first.concat(second);
+console.log(combined);
