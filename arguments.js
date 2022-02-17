@@ -9,3 +9,16 @@ function addNumbers(num1, num2){
 }
 const sum = addNumbers(23, 13, 50, 100, 420);
 console.log('total: ' + sum);
+
+
+// string
+function getFullName(firstName, lastName){
+    let fullName = '';
+    //const fullName = firstName + " " + lastName;
+    for(const part of arguments){
+        fullName = fullName + part + ' '; 
+    }
+    return fullName;
+}
+const name = getFullName('Omuk', 'shongket', 'bin', 'hanif', 'shongket');
+console.log(name);
