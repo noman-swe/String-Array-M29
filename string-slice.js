@@ -15,3 +15,13 @@ console.log(anotherPart);
 // substring(start, end)
 const anotherAnotherPart =  anthem.substring(5, 13);
 console.log(anotherAnotherPart);
+
+// concat
+const first = 'Amader';
+const second = 'City';
+//way 1
+const fullString = first + second;
+console.log(fullString);
+// another way
+const fullCity = first.concat(second).concat('Dhaka');
+console.log(fullCity);
