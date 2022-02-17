@@ -16,7 +16,7 @@ const searching = 'dell';
 const output = [];
 for(const product of products){
     if(product.toLowerCase().indexOf(searching.toLowerCase()) != -1){
-        // output.push(product);
+        output.push(product);
     }
 }
 //console.log(output);
@@ -24,7 +24,7 @@ for(const product of products){
 // way 02: includes
 for(const product of products){
     if(product.toLowerCase().includes(searching.toLowerCase())){
-        //output.push(product.toLowerCase());
+        output.push(product.toLowerCase());
     }
 }
 //console.log(output);
@@ -33,6 +33,19 @@ for(const product of products){
 for(const product of products){
     if(product.toLowerCase().startsWith(searching.toLowerCase())){
         output.push(product.toUpperCase());
+    }
+}
+//console.log(output);
+
+// ends with
+for(const product of products){
+    if(product.toLowerCase().endsWith(searching.toLowerCase())){
+        output.push(product.toUpperCase());
+    }
+}
+for(const product of products){
+    if(product.toLowerCase().endsWith(searching.toLowerCase())){
+        output.push(product);
     }
 }
 console.log(output);
